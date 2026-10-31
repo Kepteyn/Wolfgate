@@ -4,8 +4,8 @@ meta:
   engineVersion: 291.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/31/2026 10:40:00
-  entityCount: 10888
+  time: 10/31/2026 13:58:32
+  entityCount: 10891
 maps:
 - 10888
 grids:
@@ -7772,6 +7772,7 @@ entities:
       - 5560
       - 5594
       - 5643
+      - 38
   - uid: 9
     components:
     - type: Transform
@@ -7963,6 +7964,7 @@ entities:
       - 5604
       - 10875
       - 8748
+      - 141
   - uid: 23
     components:
     - type: Transform
@@ -8093,6 +8095,10 @@ entities:
       - 6540
       - 10368
       - 5859
+      - 10366
+      - 10367
+      - 10362
+      - 10365
   - uid: 10310
     components:
     - type: Transform
@@ -8102,6 +8108,8 @@ entities:
       devices:
       - 10779
       - 10778
+      - 10585
+      - 10586
   - uid: 10489
     components:
     - type: Transform
@@ -8126,6 +8134,7 @@ entities:
       - 10517
       - 10518
       - 10519
+      - 10500
   - uid: 10833
     components:
     - type: Transform
@@ -8136,6 +8145,7 @@ entities:
       devices:
       - 9244
       - 10761
+      - 10643
 - proto: AirAlarmFreezer
   entities:
   - uid: 30
@@ -8191,11 +8201,6 @@ entities:
     - type: Transform
       parent: 1
       pos: -4.5,31.5
-  - uid: 38
-    components:
-    - type: Transform
-      parent: 1
-      pos: 16.5,23.5
   - uid: 82
     components:
     - type: Transform
@@ -8223,6 +8228,12 @@ entities:
     - type: Transform
       parent: 1
       pos: 23.5,-0.5
+  - uid: 10859
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 16.5,23.5
 - proto: AirlockAssemblyEngineering
   entities:
   - uid: 39
@@ -8550,7 +8561,7 @@ entities:
       pos: 6.5,31.5
     - type: Door
       state: Opening
-      secondsUntilStateChange: -22616.496
+      secondsUntilStateChange: -23714.75
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -8594,6 +8605,11 @@ entities:
     - type: Transform
       parent: 1
       pos: -35.5,40.5
+  - uid: 10322
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,17.5
 - proto: AirlockGlassShuttleOutpost
   entities:
   - uid: 90
@@ -10600,19 +10616,6 @@ entities:
     - type: Transform
       parent: 1
       pos: -13.5,56.5
-- proto: BeeChairFancyBench
-  entities:
-  - uid: 10322
-    components:
-    - type: Transform
-      parent: 1
-      pos: 19.5,39.5
-  - uid: 10329
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 19.5,37.5
 - proto: BenchComfy
   entities:
   - uid: 444
@@ -32035,11 +32038,25 @@ entities:
       pos: -37.5,-8.5
 - proto: Firelock
   entities:
+  - uid: 38
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 16.5,23.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 8
+      configurators:
+      - invalid
   - uid: 141
     components:
     - type: Transform
       parent: 1
       pos: 24.5,4.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 22
   - uid: 1062
     components:
     - type: Transform
@@ -32264,46 +32281,70 @@ entities:
       parent: 1
       rot: 3.141592653589793 rad
       pos: 20.5,36.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 9252
   - uid: 10365
     components:
     - type: Transform
       parent: 1
       rot: 3.141592653589793 rad
       pos: 15.5,37.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 9252
   - uid: 10366
     components:
     - type: Transform
       parent: 1
       rot: 3.141592653589793 rad
       pos: 18.5,31.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 9252
   - uid: 10367
     components:
     - type: Transform
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 21.5,34.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 9252
   - uid: 10500
     components:
     - type: Transform
       parent: 1
       rot: -1.5707963267948966 rad
       pos: -1.5,-16.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 10808
   - uid: 10585
     components:
     - type: Transform
       parent: 1
       pos: 24.5,-0.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 10310
   - uid: 10586
     components:
     - type: Transform
       parent: 1
       pos: 23.5,-0.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 10310
   - uid: 10643
     components:
     - type: Transform
       parent: 1
       rot: 3.141592653589793 rad
       pos: 27.5,30.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 10833
 - proto: FirelockEdge
   entities:
   - uid: 4211
@@ -33646,18 +33687,6 @@ entities:
       color: '#990000FF'
     - type: AtmosPipeLayers
       pipeLayer: Secondary
-  - uid: 10859
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: -42.5,-1.5
-  - uid: 10860
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: -44.5,-1.5
 - proto: GasPipeBend
   entities:
   - uid: 970
@@ -39039,12 +39068,6 @@ entities:
       pos: 26.5,28.5
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 10861
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: -43.5,-1.5
   - uid: 10869
     components:
     - type: Transform
@@ -49076,6 +49099,11 @@ entities:
     - type: Transform
       parent: 1
       pos: -44.5,-6.5
+  - uid: 8305
+    components:
+    - type: Transform
+      parent: 1
+      pos: -44.5,-2.5
 - proto: MaintenanceJack
   entities:
   - uid: 6168
@@ -49282,11 +49310,21 @@ entities:
     - type: Transform
       parent: 1
       pos: -36.5,-17.5
+  - uid: 10329
+    components:
+    - type: Transform
+      parent: 1
+      pos: -44.5,-0.5
   - uid: 10703
     components:
     - type: Transform
       parent: 1
       pos: -34.5,-22.5
+  - uid: 10891
+    components:
+    - type: Transform
+      parent: 1
+      pos: -44.5,-2.5
 - proto: MonoMaintenanceToolSpawner
   entities:
   - uid: 6194
@@ -49319,6 +49357,11 @@ entities:
     - type: Transform
       parent: 1
       pos: -38.5,32.5
+  - uid: 10861
+    components:
+    - type: Transform
+      parent: 1
+      pos: -44.5,-0.5
 - proto: MopItem
   entities:
   - uid: 6200
@@ -61442,6 +61485,17 @@ entities:
     - type: Transform
       parent: 1
       pos: 23.5,15.5
+  - uid: 10889
+    components:
+    - type: Transform
+      parent: 1
+      pos: 19.5,39.5
+  - uid: 10890
+    components:
+    - type: Transform
+      parent: 1
+      rot: 3.141592653589793 rad
+      pos: 19.5,37.5
 - proto: StoolBar
   entities:
   - uid: 7933
@@ -64324,11 +64378,6 @@ entities:
     - type: Transform
       parent: 1
       pos: -23.5,-1.5
-  - uid: 8305
-    components:
-    - type: Transform
-      parent: 1
-      pos: -22.5,-1.5
   - uid: 8306
     components:
     - type: Transform
@@ -65684,6 +65733,11 @@ entities:
     - type: Transform
       parent: 1
       pos: -41.5,0.5
+  - uid: 10860
+    components:
+    - type: Transform
+      parent: 1
+      pos: -22.5,-1.5
 - proto: WallReinforced
   entities:
   - uid: 7590
@@ -74299,16 +74353,16 @@ entities:
             points: 1
             defaultMarkings: []
         markings:
-          Hair:
-          - markingColor:
-            - '#9C9990FF'
-            visible: True
-            markingId: HumanHairBalding
           FacialHair:
           - markingColor:
             - '#9C9990FF'
             visible: True
             markingId: HumanFacialHairFullbeard
+          Hair:
+          - markingColor:
+            - '#9C9990FF'
+            visible: True
+            markingId: HumanHairBalding
       gender: Male
       eyeColor: '#7C93A0FF'
       biotype: Organic
@@ -74467,16 +74521,16 @@ entities:
             points: 1
             defaultMarkings: []
         markings:
-          Hair:
-          - markingColor:
-            - '#2E2420FF'
-            visible: True
-            markingId: HumanHairCombover
           FacialHair:
           - markingColor:
             - '#2E2420FF'
             visible: True
             markingId: HumanFacialHairMoustache
+          Hair:
+          - markingColor:
+            - '#2E2420FF'
+            visible: True
+            markingId: HumanHairCombover
       gender: Male
       eyeColor: '#3D2B1FFF'
       biotype: Organic
@@ -75451,16 +75505,16 @@ entities:
             points: 1
             defaultMarkings: []
         markings:
-          Hair:
-          - markingColor:
-            - '#171310FF'
-            visible: True
-            markingId: HumanHairPompadour
           FacialHair:
           - markingColor:
             - '#171310FF'
             visible: True
             markingId: HumanFacialHairMoustache
+          Hair:
+          - markingColor:
+            - '#171310FF'
+            visible: True
+            markingId: HumanHairPompadour
       gender: Male
       eyeColor: '#6B5340FF'
       biotype: Organic
@@ -75619,16 +75673,16 @@ entities:
             points: 1
             defaultMarkings: []
         markings:
-          Hair:
-          - markingColor:
-            - '#3B3128FF'
-            visible: True
-            markingId: HumanHairCombover
           FacialHair:
           - markingColor:
             - '#3B3128FF'
             visible: True
             markingId: HumanFacialHairFullbeard
+          Hair:
+          - markingColor:
+            - '#3B3128FF'
+            visible: True
+            markingId: HumanHairCombover
       gender: Male
       eyeColor: '#6B7F8CFF'
       biotype: Organic
