@@ -1,0 +1,190 @@
+
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFSmallDish
+  name: radar dish
+  suffix: small
+  description: Recieves and transmits electromagnetic signals into space.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1
+    sprite: _WF/Decorations/Greebles/32x32.rsi
+    layers:
+    - state: bronze-dish
+
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFBigDish
+  name: radar dish
+  suffix: large
+  description: Recieves and transmits electromagnetic signals into space.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1
+    sprite: _WF/Decorations/Greebles/96x96.rsi
+    layers:
+    - state: bronze-dish-96
+
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFBigDishAlt
+  name: radar dish
+  suffix: large alternate
+  description: Recieves and transmits electromagnetic signals into space.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1
+    sprite: _WF/Decorations/Greebles/96x96.rsi
+    layers:
+    - state: bronze-dish-96-2
+
+# Poles from Bubber
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFPole
+  name: steel pole
+  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1
+    sprite: _WF/Decorations/Greebles/32x32.rsi
+    layers:
+    - state: pole
+
+- type: entity
+  parent: GreebleWFPole
+  id: GreebleWFPole-Anchor
+  name: steel pole
+  suffix: anchor
+  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: pole-anchor
+
+- type: entity
+  parent: GreebleWFPole
+  id: GreebleWFPole-Right
+  name: steel pole
+  suffix: right end
+  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: poleend-right
+
+- type: entity
+  parent: GreebleWFPole
+  id: GreebleWFPole-Left
+  name: steel pole
+  suffix: left end
+  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: poleend-left
+
+- type: entity
+  parent: GreebleWFPole
+  id: GreebleWFPole-Stripes
+  name: steel pole
+  suffix: stripes
+  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: pole-stripes
+
+#Tank greebles
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFSmallSphereTank
+  name: external tank
+  suffix: Small
+  description: A spherical tank with a significant internal volume when under pressure.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1
+    sprite: _WF/Decorations/Greebles/32x32.rsi
+    layers:
+    - state: tanksmall
+
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFSphereTank
+  name: external tank
+  description: A large, spherical tank with a vast internal volume when under pressure.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,1.5
+    sprite: _WF/Decorations/Greebles/64x64.rsi
+    layers:
+    - state: tank
+
+- type: entity
+  parent: GreebleWFSphereTank
+  id: GreebleWFSphereTankOx
+  name: external tank
+  suffix: Blue Oxy
+  description: A large, spherical tank with a vast internal volume when under pressure. The blue stripes indicate it holds oxygen.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: tank-ox
+
+- type: entity
+  parent: GreebleWFSphereTank
+  id: GreebleWFSphereTankNit
+  name: external tank
+  suffix: Red Nit
+  description: A large, spherical tank with a vast internal volume when under pressure. The red stripes indicate it holds nitrogen. Or something very flammable. It's a 50/50 chance.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    layers:
+    - state: tank-nit
+
+# Radiator greebles
+
+- type: entity
+  parent: BaseGreeble
+  id: GreebleRadiator-3
+  name: radiator
+  suffix: 3
+  description: A large, glowing-hot radiator for irradiating excess heat from a space craft so the crew inside don't start frying.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,2
+    sprite: _WF/Decorations/Greebles/32x96.rsi
+    layers:
+    - state: radiator1
+  - type: PointLight
+    enabled: true
+    offset: 0,1.5
+    radius: 3
+    color: "#e3655c" # light red
