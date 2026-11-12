@@ -136,7 +136,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    offset: 0,1.5
+    offset: 0.5,1.5
     sprite: _WF/Decorations/Greebles/64x64.rsi
     layers:
     - state: tank
@@ -188,3 +188,57 @@
     offset: 0,1.5
     radius: 3
     color: "#e3655c" # light red
+
+# Hull Panels
+- type: entity
+  parent: BaseGreeble
+  id: GreebleWFWidePanel
+  name: exterior panel
+  description: An exterior hull panel, protecting sensitive technical equipment.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0.0,0.0
+    sprite: _WF/Decorations/Greebles/64x64.rsi
+    layers:
+    - state: widepanel
+
+- type: entity
+  parent: GreebleWFWidePanel
+  id: GreebleWFWidePanelAESA
+  name: AESA
+  description: An active electronically scanned array, protected by a heavy hull panel.
+
+- type: entity
+  parent: BaseGreeble
+  id: WFGreebleAntenna1
+  name: antenna
+  description: Like antennas to hell. Usually part of a ship or station's UHF communication systems.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: -1,0
+    sprite: _WF/Decorations/Greebles/32x96.rsi
+    layers:
+    - state: wfantenna1
+    - state: wfantenna1_unshaded
+      shader: unshaded
+
+- type: entity
+  parent: BaseGreeble
+  id: WFGreebleAntenna2
+  name: antenna
+  description: Like antennas to hell. Usually part of a ship or station's UHF communication systems.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    offset: 0,2
+    sprite: _WF/Decorations/Greebles/32x96.rsi
+    layers:
+    - state: wfantenna2
+    - state: wfantenna2_unshaded
+      shader: unshaded
+

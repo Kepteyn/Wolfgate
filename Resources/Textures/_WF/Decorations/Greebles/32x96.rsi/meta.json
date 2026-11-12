@@ -19,6 +19,37 @@
                     0.5
                 ]
             ]
+    },
+     {
+      "name": "wfantenna1"
+    },
+    {
+      "name": "wfantenna1_unshaded",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.4,
+          0.4,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "wfantenna2"
+    },
+    {
+      "name": "wfantenna2_unshaded",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
     }
   ]
 }
