@@ -1,10 +1,10 @@
 
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFSmallDish
+  id: WFGreebleSmallDish
   name: radar dish
   suffix: small
-  description: Recieves and transmits electromagnetic signals into space.
+  description: Receives and transmits electromagnetic signals into space.
   placement:
     mode: SnapgridCenter
   components:
@@ -16,10 +16,10 @@
 
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFBigDish
+  id: WFGreebleBigDish
   name: radar dish
   suffix: large
-  description: Recieves and transmits electromagnetic signals into space.
+  description: Receives and transmits electromagnetic signals into space.
   placement:
     mode: SnapgridCenter
   components:
@@ -31,10 +31,10 @@
 
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFBigDishAlt
+  id: WFGreebleBigDishAlt
   name: radar dish
   suffix: large alternate
-  description: Recieves and transmits electromagnetic signals into space.
+  description: Receives and transmits electromagnetic signals into space.
   placement:
     mode: SnapgridCenter
   components:
@@ -47,9 +47,9 @@
 # Poles from Bubber
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFPole
+  id: WFGreeblePole
   name: steel pole
-  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  description: A metal pole, the likes of which are commonly used as an antenna, structural support, or simply to maneuver in zero-g.
   placement:
     mode: SnapgridCenter
   components:
@@ -60,11 +60,11 @@
     - state: pole
 
 - type: entity
-  parent: GreebleWFPole
-  id: GreebleWFPole-Anchor
+  parent: WFGreeblePole
+  id: WFGreeblePoleAnchor
   name: steel pole
   suffix: anchor
-  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  description: A metal pole, the likes of which are commonly used as an antenna, structural support, or simply to maneuver in zero-g.
   placement:
     mode: SnapgridCenter
   components:
@@ -73,11 +73,11 @@
     - state: pole-anchor
 
 - type: entity
-  parent: GreebleWFPole
-  id: GreebleWFPole-Right
+  parent: WFGreeblePole
+  id: WFGreeblePoleRight
   name: steel pole
   suffix: right end
-  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  description: A metal pole, the likes of which are commonly used as an antenna, structural support, or simply to maneuver in zero-g.
   placement:
     mode: SnapgridCenter
   components:
@@ -86,11 +86,11 @@
     - state: poleend-right
 
 - type: entity
-  parent: GreebleWFPole
-  id: GreebleWFPole-Left
+  parent: WFGreeblePole
+  id: WFGreeblePoleLeft
   name: steel pole
   suffix: left end
-  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  description: A metal pole, the likes of which are commonly used as an antenna, structural support, or simply to maneuver in zero-g.
   placement:
     mode: SnapgridCenter
   components:
@@ -99,11 +99,11 @@
     - state: poleend-left
 
 - type: entity
-  parent: GreebleWFPole
-  id: GreebleWFPole-Stripes
+  parent: WFGreeblePole
+  id: WFGreeblePoleStripes
   name: steel pole
   suffix: stripes
-  description: A metal pole, the likes of which are commonly used as an antennae, structural support, or simply to maneuver in zero-g.
+  description: A metal pole, the likes of which are commonly used as an antenna, structural support, or simply to maneuver in zero-g.
   placement:
     mode: SnapgridCenter
   components:
@@ -114,7 +114,7 @@
 #Tank greebles
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFSmallSphereTank
+  id: WFGreebleSmallSphereTank
   name: external tank
   suffix: Small
   description: A spherical tank with a significant internal volume when under pressure.
@@ -129,7 +129,7 @@
 
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFSphereTank
+  id: WFGreebleSphereTank
   name: external tank
   description: A large, spherical tank with a vast internal volume when under pressure.
   placement:
@@ -142,8 +142,8 @@
     - state: tank
 
 - type: entity
-  parent: GreebleWFSphereTank
-  id: GreebleWFSphereTankOx
+  parent: WFGreebleSphereTank
+  id: WFGreebleSphereTankOx
   name: external tank
   suffix: Blue Oxy
   description: A large, spherical tank with a vast internal volume when under pressure. The blue stripes indicate it holds oxygen.
@@ -155,8 +155,8 @@
     - state: tank-ox
 
 - type: entity
-  parent: GreebleWFSphereTank
-  id: GreebleWFSphereTankNit
+  parent: WFGreebleSphereTank
+  id: WFGreebleSphereTankNit
   name: external tank
   suffix: Red Nit
   description: A large, spherical tank with a vast internal volume when under pressure. The red stripes indicate it holds nitrogen. Or something very flammable. It's a 50/50 chance.
@@ -171,10 +171,10 @@
 
 - type: entity
   parent: BaseGreeble
-  id: GreebleRadiator-3
+  id: WFGreebleRadiator
   name: radiator
   suffix: 3
-  description: A large, glowing-hot radiator for irradiating excess heat from a space craft so the crew inside don't start frying.
+  description: A large, glowing-hot radiator for radiating excess heat from a spacecraft so the crew inside don't start frying.
   placement:
     mode: SnapgridCenter
   components:
@@ -192,7 +192,7 @@
 # Hull Panels
 - type: entity
   parent: BaseGreeble
-  id: GreebleWFWidePanel
+  id: WFGreebleWidePanel
   name: exterior panel
   description: An exterior hull panel, protecting sensitive technical equipment.
   placement:
@@ -205,8 +205,8 @@
     - state: widepanel
 
 - type: entity
-  parent: GreebleWFWidePanel
-  id: GreebleWFWidePanelAESA
+  parent: WFGreebleWidePanel
+  id: WFGreebleWidePanelAESA
   name: AESA
   description: An active electronically scanned array, protected by a heavy hull panel.
 
@@ -244,7 +244,7 @@
 
 - type: entity
   parent: GreebleRadarpanel1
-  id: GreebleRadarpanel1Flipped
+  id: WFGreebleRadarpanel1Flipped
   name: radar panel
   suffix: flipped
   placement:
