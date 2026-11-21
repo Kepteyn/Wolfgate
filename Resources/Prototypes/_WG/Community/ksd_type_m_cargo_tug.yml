@@ -30,7 +30,7 @@
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'KSD Type-M Cargo Tug {1}'
+        mapNameTemplate: 'Type-M Cargo Tug CIV{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
