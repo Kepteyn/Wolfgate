@@ -3050,7 +3050,7 @@ entities:
       pos: 4.5,-6.5
     - type: Fixtures
       fixtures: {}
-- proto: GasMixerFlipped
+- proto: GasMixerOnFlipped
   entities:
   - uid: 775
     components:
@@ -3062,6 +3062,9 @@ entities:
       pipeLayer: Tertiary
     - type: AtmosPipeColor
       color: '#0055CCFF'
+    - type: GasMixer
+      inletTwoConcentration: 0.21
+      inletOneConcentration: 0.79
 - proto: GasPassiveVent
   entities:
   - uid: 147
