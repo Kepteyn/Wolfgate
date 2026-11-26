@@ -4,7 +4,7 @@ meta:
   engineVersion: 291.0.4
   forkId: wolfgate-mapping
   forkVersion: 20261124-142757-5bcd597-tm740-b8438d08
-  time: 11/26/2026 08:03:12
+  time: 11/26/2026 08:13:56
   entityCount: 1085
 maps: []
 grids:
@@ -3123,10 +3123,6 @@ entities:
       parent: 2
       rot: 3.141592653589793 rad
       pos: 0.5,2.5
-      anchored: False
-    - type: Physics
-      canCollide: True
-      bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 734
@@ -3817,10 +3813,6 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: 0.5,2.5
-      anchored: False
-    - type: Physics
-      canCollide: True
-      bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 779
